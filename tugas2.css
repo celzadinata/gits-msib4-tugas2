@@ -1,0 +1,139 @@
+body {
+    background-color: whitesmoke;
+    margin: 5%;
+    background-image: url("https://cdn6.f-cdn.com/contestentries/35704/3660538/522a09fae5cb1_thumb900.jpg");
+}
+
+.flex-container-universal {
+    display: flex;
+    flex-flow: row wrap;
+    background-color: white;
+    border-left: 1px solid rgb(199, 198, 198);
+    border-right: 1px solid rgb(199, 198, 198);
+    border-top: 1px solid rgb(199, 198, 198);
+    transition: 0.5s ease-in-out;
+}
+
+#dark-mode {
+    background-color: red;
+    width: 80px;
+    border-radius: 20px;
+    transition: 0.5s ease-in-out;
+}
+
+#button {
+    width: 40px;
+    background-color: grey;
+    border-radius: 20px;
+    text-align: center;
+    transition: 0.5s ease-in-out;
+    position: relative;
+    cursor: pointer;
+}
+
+.default {
+    left: 0px;
+}
+
+.onactive {
+    left: 40px;
+}
+
+.flex-kiri {
+    display: flex;
+    flex-flow: column wrap;
+    width: 35%;
+    border-bottom: 1px solid rgb(199, 198, 198);
+}
+
+.flex-kanan {
+    display: flex;
+    flex-flow: column wrap;
+    width: 65%;
+    border-left: 1px solid rgb(199, 198, 198);
+}
+
+.introduction {
+    width: 96%;
+    margin: 2%;
+    align-items: center;
+    justify-content: center;
+}
+
+.sosmed-container {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sosmed-item {
+    width: 16%;
+    margin: 0;
+}
+
+.skillz-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgb(199, 198, 198);
+}
+
+.skillz-item {
+    width: 46%;
+    padding: 2%;
+}
+
+.work-education-interest-container {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgb(199, 198, 198);
+}
+
+.work-education-interest-item {
+    width: 88%;
+}
+
+.contact-container {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgb(199, 198, 198);
+}
+
+.contact-item {
+    width: 88%;
+}
+
+.button-flat {
+    border: 1px solid #801515;
+    background-color: #801515;
+    color: #FFFFFF;
+    font-size: 16px;
+    padding: 0.5em 1em 0.5em 1em;
+}
+
+.button-flat:hover {
+    opacity: 0.8;
+}
+
+.button-flat:active {
+    background: #550000;
+}
+
+@media screen and (max-width: 700px) {
+
+    .flex-container-universal,
+    .flex-kiri,
+    .flex-kanan,
+    .skillz-container,
+    .skillz-item {
+        width: 100%;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
